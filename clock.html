@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            
+        }
+        body{
+            background-color: black;
+        }
+
+        .row1,
+        .row2 {
+            width: 99.5%;
+            height: 365px;
+            border: 2px solid ;
+
+        }
+        .row1{
+            background-color: rgb(52, 47, 47);
+        }
+        .row2{
+            background-color: rgb(208, 205, 205);
+        }
+
+        .time {
+            margin-top: 150px;
+            margin-left: 450px;
+            background: rgb(12, 12, 12);
+            color: white;
+            text-align: center;
+            
+            width: 500px;
+            border: 7px solid rgb(255, 252, 252);
+            padding: 8px;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        #clock {
+            line-height: 55px;
+            color: white;
+            font-size: 50px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        #date {
+            font-size: 25px;
+            font-style: italic;
+            font-family: cursive;
+            letter-spacing: 1px;
+        }
+        #img{
+            margin: 34px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 74px;
+    width: 813px;
+    height: 185px;
+    padding-left: 560px;
+    /* background-size: 10099px 200px; */
+    background-position: center;
+    background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row1">
+        <div class="time" onload="currentTime()">
+            <div id="clock" >12:00:00 PM</div><br>
+            <div id="date" >friday</div>
+        </div>
+    </div>
+    <div class="row2">
+        <div id="img"></div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+
+</html>

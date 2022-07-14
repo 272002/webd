@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            background-color: rgb(208, 205, 205);
+            background-image: url('https://images.pexels.com/photos/589840/pexels-photo-589840.jpeg?cs=srgb&dl=pexels-valiphotos-589840.jpg&fm=jpg');
+        }
+
+        table {
+            margin: 0px;
+            padding: 0px;
+            width: 400px;
+            margin-top: 105px;
+            border-spacing: 10px 15px;
+            border: 5px solid black;
+            background-color: chocolate;
+            background-image: url('https://thumbs.dreamstime.com/b/blue-background-blue-abstract-background-blue-wallpaper-hd-abstract-blue-wallpaper-dark-blue-background-blue-abstract-background-179063633.jpg');
+        }
+
+        tr {
+            border: 2px solid blue;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            /* padding: 133px; */
+            padding: 5px;
+            /* border: 10px solid red; */
+            width: 110px;
+            
+            font-size: 25px;
+            cursor: pointer;
+            background-image: url('https://files.123freevectors.com/wp-content/original/202641-light-color-plain-background.jpg');
+            color: black;
+            font-weight: 500px;
+
+        }
+        input[type="text"]{
+            width: 433px;
+            height: 42px;
+            padding: 25px;
+            font-size: 45px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: normal;
+            background-image: url('https://files.123freevectors.com/wp-content/original/202641-light-color-plain-background.jpg');
+        } 
+
+        td {
+
+            /* background-color: aqua; */
+            border: 3px solid black;
+            padding: 0px;
+            margin: 0px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <h2
+            style="font-style: italic; color:white ;font-size:50px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <strong>CALCULATOR</strong></h2>
+        <table>
+            <tr class="rows" style="height: 100px;">
+                <td colspan="4"><input type="text" id="result"></td>
+            </tr>
+            <tr class="rows">
+                <td><input type="button" value="%" onclick="view('%')"></td>
+                <td><input type="button" value="/" onclick="view('/')"></td>
+                <td colspan="2" style="background-color:black;"><input type="button" value="AC" onclick="clr()"
+                        style="width: 235px;border-radius: 25px;"></td>
+
+
+            </tr>
+            <tr class="rows">
+                <td><input type="button" value="7" onclick="view('7')"></td>
+                <td><input type="button" value="8" onclick="view('8')"></td>
+                <td><input type="button" value="9" onclick="view('9')"></td>
+                <td><input type="button" value="*" onclick="view('*')"></td>
+            </tr>
+            <tr class="rows">
+                <td><input type="button" value="4" onclick="view('4')"></td>
+                <td><input type="button" value="5" onclick="view('5')"></td>
+                <td><input type="button" value="6" onclick="view('6')"></td>
+                <td><input type="button" value="-" onclick="view('-')"></td>
+            </tr>
+            <tr class="rows">
+                <td><input type="button" value="1" onclick="view('1')"></td>
+                <td><input type="button" value="2" onclick="view('2')"></td>
+                <td><input type="button" value="3" onclick="view('3')"></td>
+                <td rowspan="2"><input type="button" value="+" onclick="view('+')" style="height: 118px;"></td>
+            </tr>
+            <tr class="rows">
+                <td><input type="button" value="0" onclick="view('0')"></td>
+                <td><input type="button" value="." onclick="view('.')"></td>
+                <td><input type="button" value="=" onclick="compute()"></td>
+            </tr>
+
+
+
+        </table>
+    </center>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

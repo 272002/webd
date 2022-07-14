@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Twitter</title>
+    <style>
+        body{
+            background-color: black;
+            /* padding: 0%;
+            margin: 0%; */
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 290px 800px 200px;
+            grid-template-rows: 744px;
+        }
+
+        .column1 {
+            background-color: rgb(0, 0, 0);
+
+            border: 12px;
+            border-right: solid;
+            border-right-color: white;
+        }
+
+        .left {
+            list-style: none;
+            color: white;
+            padding: 27px;
+            margin: -2px;
+
+        }
+
+        .img1 {
+            width: 47px;
+            height: 53px;
+        }
+
+        .img2 {
+            width: 15px;
+            height: 18px;
+            padding-top: 2px;
+            padding-left: -3px;
+        }
+
+        .column2 {
+            background-color: black;
+            padding: 0px;
+            
+        }
+        .center{
+            list-style: none;
+            padding: 27px;
+            margin-top: 2px;
+            color:white;
+        }
+        .img3{
+            width: 40px;
+            padding-top: 8px;
+            height: 40px;
+            border-radius: 10px;
+            float: left;
+        }
+       
+       
+.img4 {
+    cursor: pointer;
+    margin-left: -23px;
+    margin-right: -22px;
+    width: 790px;
+    height: 279px;
+}
+
+        
+        .btn2{
+            background-color: black; 
+            color:white;
+            cursor: pointer; 
+            font-size: larger;
+            width: 199px;
+             height: 76px;
+            padding-left: 12px;
+            padding-top: 12px;
+            font-size: 28px;
+
+        }
+        .txt{
+            padding: 8px;
+            margin-right: 12px;
+        }
+        .btn5{
+            background-color: black;
+            color: white;
+            padding-left: 0px;
+            cursor: pointer;
+        }
+        .navigation {
+    font-size:large;
+    overflow: hidden;
+    background-color:black;
+    height: 50px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius:2px;
+    padding-top: 12px;
+
+}
+.navigation a{
+    padding: 54px;
+    text-decoration: none;
+    color: white;
+}
+.navigation a :visited{
+    color: white;
+}
+.tweet{
+    cursor: pointer;
+    margin-left: -23px;
+    margin-right: -23px;
+    width: 795px;
+    height: 135px;
+    border: 1px solid gray;
+}
+
+
+        .column3 {
+            background-color: black;
+            border-left: solid;
+            border-left-color: white;
+        }
+
+        .right {
+            list-style: none;
+        }
+
+        .btn1 {
+
+            padding: 17px;
+            margin-left: 20px;
+            margin-top: 12px;
+            border-radius: 25px;
+            width: 250px;
+
+            
+        }
+        .btn1 a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+    
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="column1">
+            <ul class="left">
+                <li><a href="https://twitter.com/" target="_blank"><img src="th.webp" class="img1"></a></li>
+                <li><button style="background-color: black; color:white;cursor: pointer; font-size: larger;"># Explore</button></li>
+                <li><button style="background-color: black; color:white;cursor: pointer; font-size: larger;"><img src="set1.png" class="img2"> Settings</button></li>
+
+            </ul>
+        </div>
+        <div class="column2"><ul class="center">
+            <li><a href="https://twitter.com/elonmusk" target="_blank"><button class="btn2" ><img src="arr2.jpg" class="img3">Elon Musk </button></a></li>
+            <li><a href="https://twitter.com/elonmusk" target="_blank"><img src="planets.png" class="img4"></a></li>
+            <li class="txt">Joined June 2009</li>
+            <li class="txt"><button class="btn5"> <span>114 Following </span> <span>100.4M Followers</span></button></li>
+            <br><br>
+            <div class="navigation" >
+                <a href="https://twitter.com/elonmusk" target="_blank">Tweets</a>
+                <a href="https://twitter.com/elonmusk" target="_blank">Tweets and Replies</a>
+                <a href="https://twitter.com/elonmusk" target="_blank">Media</a>
+                <a href="https://twitter.com/elonmusk" target="_blank">Links</a></div>
+                <br>
+                <li><a href="https://twitter.com/elonmusk" target="_blank"><img src="tweet.png" class="tweet"></a></li>
+
+            </ul>
+            </div>
+
+
+
+
+        
+        <div class="column3">
+            <ul class="right">
+                <br>
+                <li><input type="text" name="search" id="search" placeholder="Search this website" style="padding:11px; border-radius: 22px;width: 300px;margin-top: 5px;"> </li>
+                <li><button class="btn1"><a href="https://www.google.com/">Sign up with Google</a></button></li>
+                <li><button class="btn1"><a href="https://www.apple.com/">Sign up with Apple</a></button></li>
+                <li><button class="btn1" style="cursor: pointer;">Sign up with email or phone</button></li>
+            </ul>
+            <br><br><br>
+            <img src="hulk.png" width="350px" height="200px" style="cursor: pointer; padding: 2px; margin-right: -2px;">
+        </div>
+    </div>
+</body>
+
+</html>

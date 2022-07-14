@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(208, 205, 205);
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 790px 720px;
+            grid-template-rows: 740px;
+        }
+
+        .column1 {
+            background-color: rgb(208, 205, 205);
+
+        }
+
+        .fb {
+            list-style: none;
+            margin-top: 230px;
+            margin-left: 225px;
+            font-size: 100px;
+            color: rgb(49, 49, 178);
+            font-weight: bold;
+        }
+
+        .txt {
+            margin-left: 220px;
+            font-weight: bold;
+            list-style: none;
+            /* text-align: center; */
+            justify-content: left;
+            font-size: 25px;
+        }
+
+        .column2 {
+            background-color: rgb(208, 205, 205);
+        }
+
+        .btn {
+            margin-top: 200px;
+            margin-left: 67px;
+            padding: 0px;
+            height: 350px;
+            width: 450px;
+            border-radius: 10px;
+            background-color: white;
+
+        }
+
+        .info {
+            margin-top: -150px;
+            list-style: none;
+        }
+
+        .email {
+            margin-top: 150px;
+            margin-left: -87px;
+            margin-bottom: 15px;
+            width: 298px;
+            height: 16px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: medium;
+        }
+
+        .psd {
+            margin-left: -87px;
+            margin-bottom: 15px;
+            width: 298px;
+            height: 16px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: medium;
+        }
+
+        .login {
+            margin-left: -87px;
+            margin-bottom: 15px;
+            width: 298px;
+            height: 16px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: medium;
+            text-align: center;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .fpwd {
+            color: blue;
+            margin-left: -87px;
+            cursor: pointer;
+        }
+
+        .fpwd a {
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .acc {
+            margin-top: 5px;
+            margin-left: -87px;
+            margin-bottom: 15px;
+            width: 250px;
+            height: 16px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgb(36, 147, 36);
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+
+        .acc a {
+            text-decoration: none;
+            font-size: 15px;
+
+        }
+
+        .content {
+            margin-left: 137px;
+            font-weight: bold;
+            list-style: none;
+            /* text-align: center; */
+            justify-content: center;
+            font-size: 15px;
+        }
+
+        .content a {
+            text-decoration: none;
+        }
+        hr{
+           size: 10px;
+            width: 80%;
+            margin-left: 0px;
+            margin-right: 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column1">
+            <ul>
+                <li class="fb">facebook</li>
+                <li class="txt">Facebook helps you connect and share with the people in your life.</li>
+            </ul>
+        </div>
+        <div class="column2">
+            <button class="btn">
+                <ul class="info">
+                    <li><input type="email" id="email" name="email" placeholder="Email Address" class="email"></li>
+                    <li><input type="password" id="pwd" name="pwd" class="psd" placeholder="Password"></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><input type="text" id="txt" name="txt"
+                                value="Log in" class="login"></a></li>
+                    <li class="fpwd"><a href="https://www.facebook.com/" target="_blank">Forgotten pasword?</a></li>
+                    <hr >
+                    <li><a href="https://www.facebook.com/" target="_blank"><input type="text" id="txt" name="txt"
+                                value="Create New Account" class="acc"></a></li>
+                </ul>
+            </button>
+            <p class="content"><a href="https://www.facebook.com/" target="_blank"><strong>Create a Page</strong>
+                </a>for a celebrity, brand or business.</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
