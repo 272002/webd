@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" media="screen" />
+<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura-dark.css" media="screen and (prefers-color-scheme: dark)" />
+    <title>Add To Cart</title>
+    <style>
+        #num{
+            width: 192px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 28px;
+    height: 23px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div style="color: white;">Add To Cart</div>
+        <button id="minus" onclick="sub()">-</button>
+        <input   id="num" oninput="display()" value="0" style="    height: 35px;
+        padding-bottom: 0px;">
+        <button id="plus" onclick="add()">+</button>
+    </center>
+    <script src="addtocart.js"></script>
+</body>
+</html>

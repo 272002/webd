@@ -1,8 +1,12 @@
 body {
   background: #000;
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
 }
 header::before{
-    background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+    
+    /* background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover; */
     content: "";
     position: absolute;
     top:0;
@@ -18,24 +22,36 @@ header::before{
     width: 43px;
     float: right;
     margin-right: 30px;
-    margin-top: 25px;
+    margin-top: 7px;
     text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin-right: 1px;
 }
 
 #top  a:hover {
-    color: yellow;
+    color: black
 }
 
 #top a .img {
     margin-top: -10px;
-    width: 43px;
+    width: 39px;
+    height: 32px;
     display: block;
-    border-radius: 35px;
+    border-radius: 74px;
+    padding-top: 2px;
 }
 
-.google {
-    color: purple;
-    font-size: 100px;
+
+#top a .img1 {
+    margin-top: -5px;
+    width: 43px;
+    /* display: block; */
+    height: 23px;
+    width: 25px;
+    border-radius: px;
+    padding-top: 2px;
+    padding-left: 13px;
 }
 
 .topnav {
@@ -67,7 +83,7 @@ header::before{
 
 }
 .yt:hover{
-    background: pink;
+    background: white;
     color: blue;
 }
  .lucky{
@@ -82,7 +98,7 @@ header::before{
     text-decoration: none;
 }
 .lucky:hover{
-    background: pink;
+    background: white;
     color: blue;
 }   
   /* .yt1{
@@ -121,30 +137,48 @@ header::before{
 
 }    */
 #table{
-    background-color: grey;
+    background-color: rgb(50, 49, 49);
+    margin-top: 201px;
+    height: 100px;
 }
 .country{
-    color: yellow;
+    color: white;
     font-size: 25px;
-    background: grey;
+    background: rgb(50, 49, 49);
     margin: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .a1{
     float: right;
-    color: red;
-    padding: 4px;
+    color: white;
+    padding: 12px;
     font-size: 20px;
     text-decoration: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 .a1:hover{
     color: cyan;
 }
 .p1{
-    color: brown;
-    padding: 6px;
+    color: white;
+    padding: 12px;
     text-decoration: none;
     font-size: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.p2{
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 .p1:hover{
     color: cyan;

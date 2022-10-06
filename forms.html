@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" media="screen" />
+<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura-dark.css" media="screen and (prefers-color-scheme: dark)" />
+    
+
+    <style>
+      h2{
+        text-align: center;
+        color: white;
+      }
+      .head{
+        color: white;
+      }
+      #fname{
+        background-color: white;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+      }
+      #lname{
+        background-color: white;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+      }
+      #uname{
+        background-color: white;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+      }
+      #email{
+        background-color: white;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+      }
+      #pwd{
+        background-color: white;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+      }
+
+      #msg
+      {
+        color: red;
+
+      }
+      #txt{
+        color: red;
+
+      }
+      #submit{
+        font-size: large;
+        font-weight: bolder;
+        color: black;
+        background-color:white;
+      }
+    </style>
+<title>Forms</title>
+</head>
+<body>
+  <h2>Forms</h2>
+    <form >
+      <fieldset>
+        <label for="fname"  class="head">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="first-name" value="" ><br><br><br>
+
+        <label for="lname" class="head">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="last-name" value="" ><br><br><br>
+        
+        <label for="uname" class="head">User name:</label>
+        <input type="text" id="uname" name="uname" value="" placeholder="user-name"><br><br><br>
+        
+        <label for="email" class="head">Enter your email:</label>
+        <input type="email" id="email" name="email" value="" oninput="myemail()"  onclick="mypsd()" placeholder="email"><br>
+        <span id="msg"></span><br><br>
+        
+        <label for="pwd" class="head">Password:</label>
+        <input type="password" id="pwd" name="pwd" value="" oninput="mypassword() " onclick="mytxt()" placeholder="password" ><br>
+        <span id="txt"></span><br><br>
+        
+        <input type="submit" value="Submit"  id="submit">
+      </fieldset>
+      </form>
+
+
+   <script src="form.js"></script>   
+</body>
+</html>
